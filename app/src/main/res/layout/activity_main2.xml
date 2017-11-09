@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robles.savingdata.Main2Activity">
+
+    <Button
+        android:id="@+id/butSP"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_Filename"
+        android:text="Shared Pref"
+        android:onClick="loadSharedPreference"/>
+
+    <Button
+        android:id="@+id/butIS"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butSP"
+        android:text="Internal Storage"
+        android:onClick="loadInternalStorage"
+        />
+
+    <Button
+        android:id="@+id/butIC"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butIS"
+        android:text="Internal Cache"
+        android:onClick="loadInternalCache"
+        />
+
+    <Button
+        android:id="@+id/butEC"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butIC"
+        android:text="External Cache"
+        android:onClick="loadExternalCache"
+        />
+
+    <Button
+        android:id="@+id/butES"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butEC"
+        android:text="External Storage"
+        android:onClick="loadExternalStorage"
+        />
+
+    <Button
+        android:id="@+id/butEPS"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butES"
+        android:text="Ext Public Storage"
+        android:onClick="loadExternalPublic"
+        />
+
+    <Button
+        android:id="@+id/butNext"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butEPS"
+        android:text="Next"
+        android:onClick="previous"
+        />
+    </RelativeLayout>
